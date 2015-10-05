@@ -20,4 +20,5 @@ Sample HTTPS server for fun and profit
 5. Run a few curl commands (or open browser windows at https://localhost:10999)
 
 > curl -vi -k https://localhost:10999
+>
 > curl -vi --cacert src/main/resources/certificate.crt  https://localhost:10999 
