@@ -23,7 +23,7 @@ class HttpsServer(val route: Route = RestService.defaultRoute) extends SslConfig
     timeout.duration)
       
   def stop() = {
-    IO(Http) ? Http.Unbind
+    IO(Http) ? Http.CloseAll
     system.stop(handler)
   }
 }
